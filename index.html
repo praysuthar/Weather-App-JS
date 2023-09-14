@@ -12,19 +12,21 @@
 			<h1>Weather App</h1>
 			<!-- Form -->
 			<form id="weatherForm">
-				City:
+				Enter City Name:
 				<input
 					type="text"
 					id="city"
 					name="city"
-					placeholder="Enter city here..."
+					placeholder="City........"
 					required
 				/>
 				<p></p>
 				<button type="button" onclick="getWeatherData()" id="search">
 					<b>Get Weather!</b>
 				</button>
+				<button type="button" onclick="resetWeather()" id="resetButton"> <b>Reset</b></button>
 			</form>
+			<div id="weatherIcon"></div>
 			<div id="weather"></div>
 			<script src="app.js"></script>
 		</div>
