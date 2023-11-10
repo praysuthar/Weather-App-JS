@@ -4,31 +4,29 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Weather App</title>
-
 		<link rel="stylesheet" href="style.css" />
+		<script src="app.js"></script>
 	</head>
 	<body>
 		<div class="container">
+			<div class="bg-img"></div>
 			<h1>Weather App</h1>
 			<!-- Form -->
 			<form id="weatherForm">
-				Enter City Name:
 				<input
 					type="text"
 					id="city"
 					name="city"
-					placeholder="City........"
+					placeholder="Search"
 					required
 				/>
 				<p></p>
 				<button type="button" onclick="getWeatherData()" id="search">
 					<b>Get Weather!</b>
 				</button>
-				<button type="button" onclick="resetWeather()" id="resetButton"> <b>Reset</b></button>
 			</form>
-			<div id="weatherIcon"></div>
+			<!-- <img id="w" /> -->
 			<div id="weather"></div>
-			<script src="app.js"></script>
 		</div>
 	</body>
 </html>
